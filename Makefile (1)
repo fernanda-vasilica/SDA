@@ -1,0 +1,9 @@
+SRC=cat.c
+obj=cat
+CFLAGS=-Wall -Wextra -Werror
+
+all:cat
+cat:$(obj)
+compile: gcc cat.c -o cat
+%.o:%.c
+copileall:gcc $(CFLAGS) -O$@$<
